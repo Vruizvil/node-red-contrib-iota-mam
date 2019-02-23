@@ -1,5 +1,5 @@
 const IOTA = require('iota.lib.js');
-const MAM = require('./mam.client.js/lib/mam.client.js');
+const MAM = require('./mam.client.js');
 const TRAN = require('transliteration');
 
 function mamSeedGen() {
