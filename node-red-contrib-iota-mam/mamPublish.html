@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('mamPublish',{
+        category: 'function',
+        color: '#f6bbcf',
+        defaults: {
+            iotaNode: {value: "http://node04.nodeblie.de:14265/"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "iota.png",
+        label: function() {
+            return this.name||"mamPublish";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="mamPublish">
+    <div class="form-row">
+    <label for="node-function-iotaNode"><i class="icon-tag"></i> MAM publish node</label>
+    <input type="text" id="node-input-iotaNode">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="mamPublish">
+    <p>MAM publish node</p>
+</script>

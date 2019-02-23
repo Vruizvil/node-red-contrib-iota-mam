@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('iotamamFetch',{
+        category: 'IOTA-api',
+        color: '#f6bbcf',
+        defaults: {
+            iotaNode: {value: "https://pool.iota.dance:443"},
+            root: {value: "EIJVGVYZXEYGMG9PUFVPTSMHICLHYWOEHWUTOGPCXWEHIOSRP9WUTCQGEBZLFXFUTEWUMTUAQLCEOLQPV"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "iota.png",
+        label: function() {
+            return this.name||"iotamamFetch";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="iotamamFetch">
+    <div class="form-row">
+        <label for="node-function-iotaNode"><i class="icon-tag"></i> MAM node</label>
+        <input type="text" id="node-input-iotaNode">
+        <label for="node-function-root"><i class="icon-tag"></i> MAM ROOT</label>
+        <input type="text" id="node-input-root">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="iotamamFetch">
+    <p>MAM fetch node</p>
+</script>

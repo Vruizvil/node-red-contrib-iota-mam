@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('iotamamPublish',{
+        category: 'IOTA-api',
+        color: '#f6bbcf',
+        defaults: {
+            iotaNode: {value: "https://pool.iota.dance:443"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "iota.png",
+        label: function() {
+            return this.name||"iotamamPublish";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="iotamamPublish">
+    <div class="form-row">
+    <label for="node-function-iotaNode"><i class="icon-tag"></i> MAM node</label>
+    <input type="text" id="node-input-iotaNode">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="iotamamPublish">
+    <p>MAM publish node</p>
+</script>
